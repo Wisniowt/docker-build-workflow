@@ -224,7 +224,7 @@ jobs:
         # this step output is sent to job output, which is sent to workflow output
         # use this tag in another job with needs.<job-name>.outputs.image-tag
       - name: Find the primary image tag we just pushed, and output it
-        id: image-tag
+        id: image
         run: |
           # shellcheck disable=SC2086
-          echo "image-tag=${{ steps.docker_meta.outputs.version }}" >> $GITHUB_OUTPUT
+          echo "image=ghcr.io/wisniowt/docker-build-workflow" >> $GITHUB_OUTPUT
