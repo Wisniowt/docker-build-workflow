@@ -80,7 +80,7 @@ jobs:
     uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v1.7.0
     with:
       image: ghcr.io/wisniowt/docker-build-workflow
-      digest: sha256:9ebdceee3910cd0469de348bbb12a8cb25ded1994628a349e37bcaefb0c8c8de
+      digest: sha256:d264fff1a3707ec77b72d46aec68e508a1989d68afbb3686b44d0bc01b4f3099
       registry-username: ${{ github.actor }}
     secrets:
       registry-password: ${{ secrets.GITHUB_TOKEN }}
