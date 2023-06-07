@@ -39,6 +39,10 @@ on:
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
+  
+env:
+  IMAGE_REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
 
@@ -75,7 +79,7 @@ jobs:
       packages: write # for uploading attestations.
     uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v1.7.0
     with:
-      image: ghcr.io/wisniowt/docker-build-workflow:stable-20230607-977b221
+      image: ghcr.io/wisniowt/docker-build-workflow
       digest: sha256:9ebdceee3910cd0469de348bbb12a8cb25ded1994628a349e37bcaefb0c8c8de
       registry-username: ${{ github.actor }}
     secrets:
