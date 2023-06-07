@@ -67,18 +67,14 @@ jobs:
       image-names: |
         ghcr.io/${{ github.repository }}
         
-  generate-provenance:
-    needs: call-docker-build
-    name: Generate build provenance
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: ghcr.io/wisniowt/docker-build-workflow:${{ needs.call-docker-build.outputs.image-tag }}
-          path: artifact/
+  provenance:
+    needs: [call-docker-build]
+    permissions:
+      actions: read # for detecting the Github Actions environment.
+      id-token: write # for creating OIDC tokens for signing.
+      packages: write # for uploading attestations.
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v1.7.0
+    with:
+      image: ${{ needs.call-docker-build.outputs.image }}
+      digest: ${{ needs.call-docker-build.outputs.digest }}
 
-      - name: Generate provenance
-        uses: slsa-framework/github-actions-demo@v0.1
-        with:
-          artifact_path: artifact/
