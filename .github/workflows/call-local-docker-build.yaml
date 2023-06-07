@@ -77,4 +77,7 @@ jobs:
     with:
       image: ghcr.io/wisniowt/docker-build-workflow:stable-20230607-977b221
       digest: sha256:9ebdceee3910cd0469de348bbb12a8cb25ded1994628a349e37bcaefb0c8c8de
+      registry-username: ${{ github.actor }}
+    secrets:
+      registry-password: ${{ secrets.GITHUB_TOKEN }}
 
