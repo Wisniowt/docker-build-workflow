@@ -75,6 +75,6 @@ jobs:
       packages: write # for uploading attestations.
     uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v1.7.0
     with:
-      image: ${{ needs.call-docker-build.outputs.image }}
-      digest: ${{ needs.call-docker-build.outputs.digest }}
+      image: ghcr.io/wisniowt/docker-build-workflow:${{ needs.call-docker-build.outputs.image-tag }}
+      digest: ghcr.io/wisniowt/docker-build-workflow:${{ needs.call-docker-build.outputs.image-tag }}
 
