@@ -45,7 +45,7 @@ jobs:
   call-docker-build:
 
     name: Call Docker Build
-
+  
     uses: ./.github/workflows/reusable-docker-build.yaml
 
     permissions:
@@ -75,10 +75,8 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v2
         with:
+          name: ghcr.io/wisniowt/docker-build-workflow:{needs.call_docker_build.outputs.image-tag}
           path: artifact/
-        
-      - name: Show me file structure
-        run: ls
 
       - name: Generate provenance
         uses: slsa-framework/github-actions-demo@v0.1
