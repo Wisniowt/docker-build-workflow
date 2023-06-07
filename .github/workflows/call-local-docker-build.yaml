@@ -76,6 +76,9 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           path: artifact/
+        
+      - name: Show me file structure
+        run: ls
 
       - name: Generate provenance
         uses: slsa-framework/github-actions-demo@v0.1
