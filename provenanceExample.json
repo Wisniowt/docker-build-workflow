@@ -1,0 +1,243 @@
+{
+  "_type": "https://in-toto.io/Statement/v0.1",
+  "predicateType": "https://slsa.dev/provenance/v0.2",
+  "subject": [
+    {
+      "name": "ghcr.io/wisniowt/docker-build-workflow",
+      "digest": {
+        "sha256": "d264fff1a3707ec77b72d46aec68e508a1989d68afbb3686b44d0bc01b4f3099"
+      }
+    }
+  ],
+  "predicate": {
+    "builder": {
+      "id": "https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v1.7.0"
+    },
+    "buildType": "https://github.com/slsa-framework/slsa-github-generator/container@v1",
+    "invocation": {
+      "configSource": {
+        "uri": "git+https://github.com/Wisniowt/docker-build-workflow@refs/heads/main",
+        "digest": {
+          "sha1": "2cac955b72e2fa9dbbaed5e2e598660799a1b219"
+        },
+        "entryPoint": ".github/workflows/call-local-docker-build.yaml"
+      },
+      "parameters": {},
+      "environment": {
+        "github_actor": "Wisniowt",
+        "github_actor_id": "35734462",
+        "github_base_ref": "",
+        "github_event_name": "push",
+        "github_event_payload": {
+          "after": "2cac955b72e2fa9dbbaed5e2e598660799a1b219",
+          "base_ref": null,
+          "before": "5910aada5f83757af172ce48c4624cd8794b7292",
+          "commits": [
+            {
+              "author": {
+                "email": "35734462+Wisniowt@users.noreply.github.com",
+                "name": "Wisniowt",
+                "username": "Wisniowt"
+              },
+              "committer": {
+                "email": "noreply@github.com",
+                "name": "GitHub",
+                "username": "web-flow"
+              },
+              "distinct": true,
+              "id": "2cac955b72e2fa9dbbaed5e2e598660799a1b219",
+              "message": "Update call-local-docker-build.yaml",
+              "timestamp": "2023-06-07T16:57:20+01:00",
+              "tree_id": "d8c60286e0977487ac9b5d4857923258eb3ff3ba",
+              "url": "https://github.com/Wisniowt/docker-build-workflow/commit/2cac955b72e2fa9dbbaed5e2e598660799a1b219"
+            }
+          ],
+          "compare": "https://github.com/Wisniowt/docker-build-workflow/compare/5910aada5f83...2cac955b72e2",
+          "created": false,
+          "deleted": false,
+          "forced": false,
+          "head_commit": {
+            "author": {
+              "email": "35734462+Wisniowt@users.noreply.github.com",
+              "name": "Wisniowt",
+              "username": "Wisniowt"
+            },
+            "committer": {
+              "email": "noreply@github.com",
+              "name": "GitHub",
+              "username": "web-flow"
+            },
+            "distinct": true,
+            "id": "2cac955b72e2fa9dbbaed5e2e598660799a1b219",
+            "message": "Update call-local-docker-build.yaml",
+            "timestamp": "2023-06-07T16:57:20+01:00",
+            "tree_id": "d8c60286e0977487ac9b5d4857923258eb3ff3ba",
+            "url": "https://github.com/Wisniowt/docker-build-workflow/commit/2cac955b72e2fa9dbbaed5e2e598660799a1b219"
+          },
+          "pusher": {
+            "email": "35734462+Wisniowt@users.noreply.github.com",
+            "name": "Wisniowt"
+          },
+          "ref": "refs/heads/main",
+          "repository": {
+            "allow_forking": true,
+            "archive_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/{archive_format}{/ref}",
+            "archived": false,
+            "assignees_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/assignees{/user}",
+            "blobs_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/git/blobs{/sha}",
+            "branches_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/branches{/branch}",
+            "clone_url": "https://github.com/Wisniowt/docker-build-workflow.git",
+            "collaborators_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/collaborators{/collaborator}",
+            "comments_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/comments{/number}",
+            "commits_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/commits{/sha}",
+            "compare_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/compare/{base}...{head}",
+            "contents_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/contents/{+path}",
+            "contributors_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/contributors",
+            "created_at": 1685715542,
+            "default_branch": "main",
+            "deployments_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/deployments",
+            "description": "A Reusable Workflow of the Docker GitHub Actions",
+            "disabled": false,
+            "downloads_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/downloads",
+            "events_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/events",
+            "fork": true,
+            "forks": 0,
+            "forks_count": 0,
+            "forks_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/forks",
+            "full_name": "Wisniowt/docker-build-workflow",
+            "git_commits_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/git/commits{/sha}",
+            "git_refs_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/git/refs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/git/tags{/sha}",
+            "git_url": "git://github.com/Wisniowt/docker-build-workflow.git",
+            "has_discussions": false,
+            "has_downloads": true,
+            "has_issues": false,
+            "has_pages": false,
+            "has_projects": true,
+            "has_wiki": false,
+            "homepage": "",
+            "hooks_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/hooks",
+            "html_url": "https://github.com/Wisniowt/docker-build-workflow",
+            "id": 648673450,
+            "is_template": true,
+            "issue_comment_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/issues/comments{/number}",
+            "issue_events_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/issues/events{/number}",
+            "issues_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/issues{/number}",
+            "keys_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/keys{/key_id}",
+            "labels_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/labels{/name}",
+            "language": "Dockerfile",
+            "languages_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/languages",
+            "license": {
+              "key": "unlicense",
+              "name": "The Unlicense",
+              "node_id": "MDc6TGljZW5zZTE1",
+              "spdx_id": "Unlicense",
+              "url": "https://api.github.com/licenses/unlicense"
+            },
+            "master_branch": "main",
+            "merges_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/merges",
+            "milestones_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/milestones{/number}",
+            "mirror_url": null,
+            "name": "docker-build-workflow",
+            "node_id": "R_kgDOJqn4qg",
+            "notifications_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/notifications{?since,all,participating}",
+            "open_issues": 0,
+            "open_issues_count": 0,
+            "owner": {
+              "avatar_url": "https://avatars.githubusercontent.com/u/35734462?v=4",
+              "email": "35734462+Wisniowt@users.noreply.github.com",
+              "events_url": "https://api.github.com/users/Wisniowt/events{/privacy}",
+              "followers_url": "https://api.github.com/users/Wisniowt/followers",
+              "following_url": "https://api.github.com/users/Wisniowt/following{/other_user}",
+              "gists_url": "https://api.github.com/users/Wisniowt/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/Wisniowt",
+              "id": 35734462,
+              "login": "Wisniowt",
+              "name": "Wisniowt",
+              "node_id": "MDQ6VXNlcjM1NzM0NDYy",
+              "organizations_url": "https://api.github.com/users/Wisniowt/orgs",
+              "received_events_url": "https://api.github.com/users/Wisniowt/received_events",
+              "repos_url": "https://api.github.com/users/Wisniowt/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/Wisniowt/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/Wisniowt/subscriptions",
+              "type": "User",
+              "url": "https://api.github.com/users/Wisniowt"
+            },
+            "private": false,
+            "pulls_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/pulls{/number}",
+            "pushed_at": 1686153440,
+            "releases_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/releases{/id}",
+            "size": 74,
+            "ssh_url": "git@github.com:Wisniowt/docker-build-workflow.git",
+            "stargazers": 0,
+            "stargazers_count": 0,
+            "stargazers_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/stargazers",
+            "statuses_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/statuses/{sha}",
+            "subscribers_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/subscribers",
+            "subscription_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/subscription",
+            "svn_url": "https://github.com/Wisniowt/docker-build-workflow",
+            "tags_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/tags",
+            "teams_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/teams",
+            "topics": [],
+            "trees_url": "https://api.github.com/repos/Wisniowt/docker-build-workflow/git/trees{/sha}",
+            "updated_at": "2023-06-02T14:39:45Z",
+            "url": "https://github.com/Wisniowt/docker-build-workflow",
+            "visibility": "public",
+            "watchers": 0,
+            "watchers_count": 0,
+            "web_commit_signoff_required": false
+          },
+          "sender": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/35734462?v=4",
+            "events_url": "https://api.github.com/users/Wisniowt/events{/privacy}",
+            "followers_url": "https://api.github.com/users/Wisniowt/followers",
+            "following_url": "https://api.github.com/users/Wisniowt/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Wisniowt/gists{/gist_id}",
+            "gravatar_id": "",
+            "html_url": "https://github.com/Wisniowt",
+            "id": 35734462,
+            "login": "Wisniowt",
+            "node_id": "MDQ6VXNlcjM1NzM0NDYy",
+            "organizations_url": "https://api.github.com/users/Wisniowt/orgs",
+            "received_events_url": "https://api.github.com/users/Wisniowt/received_events",
+            "repos_url": "https://api.github.com/users/Wisniowt/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/Wisniowt/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Wisniowt/subscriptions",
+            "type": "User",
+            "url": "https://api.github.com/users/Wisniowt"
+          }
+        },
+        "github_head_ref": "",
+        "github_ref": "refs/heads/main",
+        "github_ref_type": "branch",
+        "github_repository_id": "648673450",
+        "github_repository_owner": "Wisniowt",
+        "github_repository_owner_id": "35734462",
+        "github_run_attempt": "1",
+        "github_run_id": "5202184637",
+        "github_run_number": "15",
+        "github_sha1": "2cac955b72e2fa9dbbaed5e2e598660799a1b219"
+      }
+    },
+    "metadata": {
+      "buildInvocationID": "5202184637-1",
+      "completeness": {
+        "parameters": true,
+        "environment": false,
+        "materials": false
+      },
+      "reproducible": false
+    },
+    "materials": [
+      {
+        "uri": "git+https://github.com/Wisniowt/docker-build-workflow@refs/heads/main",
+        "digest": {
+          "sha1": "2cac955b72e2fa9dbbaed5e2e598660799a1b219"
+        }
+      }
+    ]
+  }
+}
